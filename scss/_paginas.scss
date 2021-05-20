@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+/*VARIABLES GLOBALES INICIO*/
+$rosa:#f0afad;
+$blanco: #fff;
+$rViejo: #733E4B;
+$bordo:#2c040e;
+$ladrillo: #bd2130;
+$degBordo: #2c040e;
+$degRosa: #6b1a3d;
+$negro: #000000;
+$ancho: 100%;
+$padding: 50px;
+
+/*VARIABLES GLOBALES FIN*/
+
+/*Comienzo css propio y reescritura de clases Boostrap*/
+
+
+.slider-p{
+  font-size: 1.3em;
+}
+
+.featurette-heading{
+  font-weight: 400 !important;
+}
+
+
+$theme-colors: (
+    "rosa": $rosa,
+    "blanco": $blanco,
+    "bordo": $bordo,
+    "ladrillo": $ladrillo,
+    "degRosa": $degRosa,
+    "degBordo": $degBordo,
+    "negro": $negro,
+    "rViejo": $rViejo
+);
+
+@each $color, $value in $theme-colors {
+    .bg-#{$color} {
+        background-color: $value;
+    }
+}
+
+body{
+  padding-bottom: 0;
+  padding-top: 4em;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.lead{
+  font-weight: 400 !important;
+}
+
+.nav-item{
+  transition: all 500ms ease;
+}
+
+.nav-item:hover{
+  transform: scale(1.2, 1.2);
+  padding: 0 20px;
+}
+
+.imgRedes{
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+.footer{
+  padding-top: 15px;
+  margin-top: 70px;
+}
+
+.nav-link{
+  letter-spacing: 1px;
+}
+
+.links{
+  li{
+    list-style: none;
+    a{
+      padding: 15px 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+
+    }
+  }
+}
+
+.bg-navbar {
+    background-image: linear-gradient($degBordo, $degRosa 50%, $degBordo);
+    }
+
+.dropdown-item{
+  color: $blanco !important;
+  text-shadow: 4px 3px 4px $negro;
+}
+
+.btn-primary{
+  background-color: $ladrillo !important;
+  border: 1px solid $rViejo;
+
+  &:hover {
+    border: 1px solid $rosa;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid $rosa !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+.carousel-caption{
+  background: rgba(55, 8, 22, 0.3);
+  width: 100%;
+  left: 0;
+  bottom: 0 !important;
+}
+
+.slider-p, .slider-tit{
+  text-shadow: 4px 4px 4px $negro;
+}
+
+ul{
+  li{
+    a{
+       color: $blanco;
+       &:hover{
+        color: $rosa !important;
+       } 
+    }
+  }
+}
+
+h1, h2, li a{
+  font-family: 'Cabin', sans-serif;
+}
+
+.tituloComun{
+  font-size: 2rem;
+}
+
+.nav-item{
+  font-size: 1.2em !important;
+}
+
+.mapa{
+  width: 400px;
+}
+
+.copy{
+  color: $blanco;
+}
+
+.footer{
+  background-color: $bordo;
+}
+
+.lead{
+    list-style-type: none;
+}
+
+.foto-grande {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.card {
+  transition: all 500ms ease;
+  overflow: hidden;
+
+  .btn-primary {
+    transition: all 500ms ease;
+  }
+  
+  &:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.125);
+
+    .btn-primary {
+      transform: scale(1.2, 1.2);
+    }
+
+  }
+
+
+}
+
+/*Fin css propio y reescritura de clases Boostrap*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+.header__img {
+        width: 200px;
+    }
+
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 2rem;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > picture {
+  width: 100%;
+  display: block;
+}
+
+.carousel-item > picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/*Tablet*/
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      position: absolute;
+      top: 0px;
+      right: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      margin-top: 56px;
+      width: 100%;
+      transition: all 0.3s ease;
+      display: block;
+      background: $degRosa;
+      text-align: center;
+      font-weight: bold;
+      z-index: -10;
+  }
+  .navbar-collapse.collapsing {
+      height: auto !important;
+      margin-right: 50%;
+      transition: all 0.3s ease;
+      display: block;
+  }
+  .navbar-collapse.show {
+      right: 0;
+  }
+  .navbar-nav .nav-link {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color: $blanco !important;
+  }
+}
+
+/*Celulares*/
+
+@media screen and (max-width: 768px) {
+  
+  
+
+  .navbar-brand {
+    width: 70%;
+  }
+
+  .card-img-top {
+    height: auto;
+  }
+  .navbar-collapse {
+    top: 0;
+  }
+  .botMob{
+  display: none;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .header__img {
+    width: 80%;
+  }
+
+  .links li a {
+      padding: 15px 10px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    z-index: 1000;
+  }
+
+  .botMob{
+  display: none;
+  }
+
+}
