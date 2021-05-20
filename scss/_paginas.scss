@@ -16,16 +16,6 @@ $padding: 50px;
 
 /*Comienzo css propio y reescritura de clases Boostrap*/
 
-
-.slider-p{
-  font-size: 1.3em;
-}
-
-.featurette-heading{
-  font-weight: 400 !important;
-}
-
-
 $theme-colors: (
     "rosa": $rosa,
     "blanco": $blanco,
@@ -49,8 +39,8 @@ body{
   font-family: 'Hind Siliguri', sans-serif;
 }
 
-.lead{
-  font-weight: 400 !important;
+.nav-link{
+  letter-spacing: 1px;
 }
 
 .nav-item{
@@ -62,18 +52,25 @@ body{
   padding: 0 20px;
 }
 
-.imgRedes{
-  margin-right: 10px;
-  margin-bottom: 4px;
+.nav-item{
+  font-size: 1.2em !important;
 }
 
-.footer{
-  padding-top: 15px;
-  margin-top: 70px;
+.bg-navbar {
+  background-image: linear-gradient($degBordo, $degRosa 50%, $degBordo);
 }
 
-.nav-link{
-  letter-spacing: 1px;
+.slider-p{
+  font-size: 1.3em;
+}
+
+
+.featurette-heading{
+  font-weight: 400 !important;
+}
+
+.lead{
+  font-weight: 400 !important;
 }
 
 .links{
@@ -88,13 +85,15 @@ body{
   }
 }
 
-.bg-navbar {
-    background-image: linear-gradient($degBordo, $degRosa 50%, $degBordo);
-    }
+.carousel-caption{
+  background: rgba(55, 8, 22, 0.3);
+  width: 100%;
+  left: 0;
+  bottom: 0 !important;
+}
 
-.dropdown-item{
-  color: $blanco !important;
-  text-shadow: 4px 3px 4px $negro;
+.slider-p, .slider-tit{
+  text-shadow: 4px 4px 4px $negro;
 }
 
 .btn-primary{
@@ -111,17 +110,6 @@ body{
     outline: none !important;
     box-shadow: none;
   }
-}
-
-.carousel-caption{
-  background: rgba(55, 8, 22, 0.3);
-  width: 100%;
-  left: 0;
-  bottom: 0 !important;
-}
-
-.slider-p, .slider-tit{
-  text-shadow: 4px 4px 4px $negro;
 }
 
 ul{
@@ -143,8 +131,20 @@ h1, h2, li a{
   font-size: 2rem;
 }
 
-.nav-item{
-  font-size: 1.2em !important;
+.dropdown-item{
+  color: $blanco !important;
+  text-shadow: 4px 3px 4px $negro;
+}
+
+.imgRedes{/*ver si sirve ésta clase*/
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+.footer{/*ver si sirve ésta clase*/
+  padding-top: 15px;
+  margin-top: 70px;
+  background-color: $bordo;
 }
 
 .mapa{
@@ -155,19 +155,8 @@ h1, h2, li a{
   color: $blanco;
 }
 
-.footer{
-  background-color: $bordo;
-}
-
 .lead{
     list-style-type: none;
-}
-
-.foto-grande {
-  height: 90%;
-  width: 100%;
-  object-fit: cover;
-  object-position: right center;
 }
 
 .card {
@@ -187,8 +176,8 @@ h1, h2, li a{
 
   }
 
-
 }
+
 
 /*Fin css propio y reescritura de clases Boostrap*/
 
