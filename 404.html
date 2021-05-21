@@ -1,25 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404</title>
+    <title>Error 404 / Hana Creaciones</title>
     <link href="css/estilos.css" rel="stylesheet">
 </head>
+
+    
 <body>
-    <div class="conteiner text-center"> 
-        
-            <div class="col-sm-12">
-                
-                    <img src="img/404.jpg" alt="Hana Creaciones">
-                
-                
+    
+        <!-- COMIENZA EL HEADER -->
+    
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-navbar fixed-top navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="header__img"
+                        alt="Logo Hana Creaciones" width="200" height="36"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="paginas/almohadillas.html" tabindex="-1"
+                                aria-disabled="true">Almohadillas Terapéuticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="paginas/productos.html" tabindex="-1"
+                                aria-disabled="true">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <!-- TERMINA EL HEADER -->
+    
+        <main role="main">
+    
+            
+    
+            <!-- CONTENIDO -->
+    
+            <div class="container pb-1">
+                <div class="row my-5">
                     
-                
+                    <div class="col-sm-4 pt-4 error">
+                        <h1 class="featurette-heading mb-5">Página no encontrada</h1>
+                        <h2 class="mb-3">¿Querés relajarte?</h2>
+                        <p class="mt-4">¡Volvé con nosotros!</p>
+                        
+                    </div> 
+                    <div class="col-sm-8">
+                        <img src="img/404.png" alt="Error 404" width="730" height="643" class="img-fluid">
+                    </div>
+                </div>
             </div>
-      
-        <a href="index.html" class="btn btn-primary">Volver a la Home</a>
-    </div>
+    
+            <!-- FIN DE CONTENIDO -->
+    
+            <!-- FOOTER -->
+    
+            <footer class="footer p-4">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-md-12 botMob">
+                            <ul class="links d-flex flex-md-row flex-column justify-content-center p-0 text-center m-0">
+                                <li class="inlineBlock"><a href="index.html">Home</a></li>
+                                <li class="inlineBlock"><a href="paginas/nosotros.html">Nosotros</a></li>
+                                <li class="inlineBlock"><a href="paginas/almohadillas.html">Almohadillas Terapéuticas</a></li>
+                                <li class="inlineBlock"><a href="paginas/productos.html">Productos</a></li>
+                                <li class="inlineBlock"><a href="paginas/contactanos.html">Contactanos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <ul class="links d-flex flex-md-row justify-content-center p-0">
+                                <li class="inlineBlock">
+                                    <a href="https://www.facebook.com/hana.creacionescondisenio/" target="_blank"
+                                        rel="noreferrer"><img src="img/face.png" alt="Facebook" width="30" height="30"
+                                            class="imgRedes"></a>
+                                </li>
+                                <li class="inlineBlock">
+                                    <a href="https://www.instagram.com/hana.creaciones/" target="_blank"
+                                        rel="noreferrer"><img src="img/INST.png" alt="Instagram" width="30" height="30"
+                                            class="imgRedes"></a>
+                                </li>
+                                <li class="inlineBlock">
+                                    <a href="https://api.whatsapp.com/send?phone=541133792800&text=Hola,%20me%20gustar%C3%ADa%20consultar%20por..."
+                                        target="_blank" rel="noreferrer"><img src="img/whatsapp.png" alt="Whatsapp"
+                                            width="30" height="30" class="imgRedes"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <p class="copy m-0">&copy; Diseño hecho por Julieta Bondi - Copyright</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
+            <!-- FOOTER FINAL -->
+    
+        </main>
+    
+    
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    
+    </html>
+
 </body>
 </html>
